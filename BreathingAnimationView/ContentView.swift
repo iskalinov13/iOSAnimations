@@ -22,8 +22,20 @@ struct ContentView: View {
                 .rotationEffect(Angle(degrees: isCenter2 ? 0 : 360))
             
             Circle()
+                .frame(width: 30, height: 30)
+                .foregroundColor(Color.pink.opacity(0.3))
+                .offset(x: isCenter ? 0: 50)
+                .rotationEffect(Angle(degrees: isCenter2 ? 0 : 360))
+            
+            Circle()
                 .frame(width: 100, height: 100)
                 .foregroundColor(Color.green.opacity(0.5))
+                .offset(x: isCenter ? 0: -50)
+                .rotationEffect(Angle(degrees: isCenter2 ? 0 : 360))
+            
+            Circle()
+                .frame(width: 30, height: 30)
+                .foregroundColor(Color.pink.opacity(0.3))
                 .offset(x: isCenter ? 0: -50)
                 .rotationEffect(Angle(degrees: isCenter2 ? 0 : 360))
             
@@ -34,8 +46,20 @@ struct ContentView: View {
                 .rotationEffect(Angle(degrees: isCenter2 ? 0 : 360))
             
             Circle()
+                .frame(width: 30, height: 30)
+                .foregroundColor(Color.pink.opacity(0.3))
+                .offset(y: isCenter ? 0: 50)
+                .rotationEffect(Angle(degrees: isCenter2 ? 0 : 360))
+            
+            Circle()
                 .frame(width: 100, height: 100)
                 .foregroundColor(Color.green.opacity(0.5))
+                .offset(y: isCenter ? 0: -50)
+                .rotationEffect(Angle(degrees: isCenter2 ? 0 : 360))
+            
+            Circle()
+                .frame(width: 30, height: 30)
+                .foregroundColor(Color.pink.opacity(0.3))
                 .offset(y: isCenter ? 0: -50)
                 .rotationEffect(Angle(degrees: isCenter2 ? 0 : 360))
         }
